@@ -42,6 +42,6 @@ abstract public class BaseTest implements IAutoConstants
 			Reporter.log(testName+" is FAILED", true);
 			AutoUtils.getPhoto(driver, IMAGE_PATH, testName);
 		}
-		driver.close();
+		driver.quit();
 	}
 }
