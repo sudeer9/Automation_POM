@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="script.VerifyProductVersion_Test">
+        <methods>
+          <include name="testProductVerson"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.VerifyProductVersion_Test -->
+      <class name="script.InvalidLogin_Test">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.InvalidLogin_Test -->
+      <class name="script.ValidLogin_Test">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.ValidLogin_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

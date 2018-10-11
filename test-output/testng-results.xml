@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Home page is Displayed]]>
@@ -7,132 +7,34 @@
     <line>
       <![CDATA[testValidLogin is PASSED]]>
     </line>
-    <line>
-      <![CDATA[testInvalidLogin is PASSED]]>
-    </line>
-    <line>
-      <![CDATA[testProductVerson is FAILED]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="60273" started-at="2018-10-09T15:33:55Z" finished-at="2018-10-09T15:34:56Z">
+  <suite name="Default suite" duration-ms="27396" started-at="2018-10-11T03:21:19Z" finished-at="2018-10-11T03:21:47Z">
     <groups>
       <group name="smoke">
-        <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@42e26948]" name="testValidLogin" class="script.ValidLogin_Test"/>
-        <method signature="VerifyProductVersion_Test.testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@57baeedf]" name="testProductVerson" class="script.VerifyProductVersion_Test"/>
+        <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@4883b407]" name="testValidLogin" class="script.ValidLogin_Test"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin_Test.testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@343f4d3d]" name="testInvalidLogin" class="script.InvalidLogin_Test"/>
-        <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@42e26948]" name="testValidLogin" class="script.ValidLogin_Test"/>
+        <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@4883b407]" name="testValidLogin" class="script.ValidLogin_Test"/>
       </group> <!-- login -->
     </groups>
-    <test name="Test" duration-ms="60273" started-at="2018-10-09T15:33:55Z" finished-at="2018-10-09T15:34:56Z">
-      <class name="script.InvalidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@343f4d3d]" name="openApp" is-config="true" duration-ms="8236" started-at="2018-10-09T15:34:12Z" finished-at="2018-10-09T15:34:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@343f4d3d]" name="testInvalidLogin" duration-ms="17470" started-at="2018-10-09T15:34:20Z" finished-at="2018-10-09T15:34:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@343f4d3d]" name="closeApp" is-config="true" duration-ms="1305" started-at="2018-10-09T15:34:38Z" finished-at="2018-10-09T15:34:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin_Test.testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@343f4d3d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testInvalidLogin is PASSED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.InvalidLogin_Test -->
-      <class name="script.VerifyProductVersion_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.VerifyProductVersion_Test@57baeedf]" name="openApp" is-config="true" duration-ms="8060" started-at="2018-10-09T15:34:39Z" finished-at="2018-10-09T15:34:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@57baeedf]" name="testProductVerson" duration-ms="6598" started-at="2018-10-09T15:34:47Z" finished-at="2018-10-09T15:34:54Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [123.0] but found [actiTIME 2017.4]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [123.0] but found [actiTIME 2017.4]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at page.EnterPage.verifyProductVersion(EnterPage.java:40)
-at script.VerifyProductVersion_Test.testProductVerson(VerifyProductVersion_Test.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProductVerson -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.VerifyProductVersion_Test@57baeedf]" name="closeApp" is-config="true" duration-ms="1778" started-at="2018-10-09T15:34:54Z" finished-at="2018-10-09T15:34:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testProductVerson status=FAILURE method=VerifyProductVersion_Test.testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@57baeedf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testProductVerson is FAILED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.VerifyProductVersion_Test -->
+    <test name="Default test" duration-ms="27396" started-at="2018-10-11T03:21:19Z" finished-at="2018-10-11T03:21:47Z">
       <class name="script.ValidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@42e26948]" name="openApp" is-config="true" duration-ms="9161" started-at="2018-10-09T15:33:55Z" finished-at="2018-10-09T15:34:04Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@4883b407]" name="openApp" is-config="true" duration-ms="17230" started-at="2018-10-11T03:21:19Z" finished-at="2018-10-11T03:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@42e26948]" name="testValidLogin" duration-ms="6283" started-at="2018-10-09T15:34:04Z" finished-at="2018-10-09T15:34:11Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@4883b407]" name="testValidLogin" duration-ms="8352" started-at="2018-10-11T03:21:36Z" finished-at="2018-10-11T03:21:45Z">
           <reporter-output>
             <line>
               <![CDATA[Home page is Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@42e26948]" name="closeApp" is-config="true" duration-ms="1336" started-at="2018-10-09T15:34:11Z" finished-at="2018-10-09T15:34:12Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@4883b407]" name="closeApp" is-config="true" duration-ms="1781" started-at="2018-10-11T03:21:45Z" finished-at="2018-10-11T03:21:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@42e26948] output=Home page is Displayed]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@4883b407] output=Home page is Displayed]]]>
               </value>
             </param>
           </params>
@@ -143,6 +45,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.ValidLogin_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
