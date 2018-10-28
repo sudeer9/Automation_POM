@@ -9,35 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">74,269</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">72,751</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">script.VerifyProductVersion_Test</td><td><a href="#m0">testProductVerson</a></td><td rowspan="1">1539748505937</td><td rowspan="1">2653</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">script.InvalidLogin_Test</td><td><a href="#m1">testInvalidLogin</a></td><td rowspan="1">1539748477491</td><td rowspan="1">17773</td></tr><tr class="passedodd"><td rowspan="1">script.ValidLogin_Test</td><td><a href="#m2">testValidLogin</a></td><td rowspan="1">1539748456891</td><td rowspan="1">8007</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">script.InvalidLogin_Test</td><td><a href="#m0">testInvalidLogin</a></td><td rowspan="1">1540612276520</td><td rowspan="1">17799</td></tr><tr class="passedodd"><td rowspan="1">script.ValidLogin_Test</td><td><a href="#m1">testValidLogin</a></td><td rowspan="1">1540612257602</td><td rowspan="1">8322</td></tr><tr class="passedeven"><td rowspan="1">script.VerifyProductVersion_Test</td><td><a href="#m2">testProductVerson</a></td><td rowspan="1">1540612305603</td><td rowspan="1">6942</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">script.VerifyProductVersion_Test#testProductVerson</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;popup_menu_label&quot;&gt;...&lt;/div&gt; is not clickable at point (1429, 67). Other element would receive the click: &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot; style=&quot;transition: opacity 600ms ease-in-out 0s; opacity: 0;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;BLRIDC30195282&apos;, ip: &apos;192.168.0.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\30195282\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60727}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 9962642a348ca6095672300d29b313f0
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at page.EnterPage.clickHelp(EnterPage.java:31)
-	at script.VerifyProductVersion_Test.testProductVerson(VerifyProductVersion_Test.java:27)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">script.InvalidLogin_Test#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">script.ValidLogin_Test#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Home page is Displayed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">script.InvalidLogin_Test#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">script.ValidLogin_Test#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Home page is Displayed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">script.VerifyProductVersion_Test#testProductVerson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
