@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
     <line>
       <![CDATA[Home page is Displayed]]>
@@ -11,10 +11,10 @@
       <![CDATA[testInvalidLogin is PASSED]]>
     </line>
     <line>
-      <![CDATA[testProductVerson is PASSED]]>
+      <![CDATA[testProductVerson is FAILED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="74265" started-at="2019-05-02T17:23:13Z" finished-at="2019-05-02T17:24:28Z">
+  <suite name="Suite" duration-ms="68320" started-at="2019-05-04T07:16:35Z" finished-at="2019-05-04T07:17:44Z">
     <groups>
       <group name="smoke">
         <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@4c70fda8]" name="testValidLogin" class="script.ValidLogin_Test"/>
@@ -25,17 +25,17 @@
         <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@4c70fda8]" name="testValidLogin" class="script.ValidLogin_Test"/>
       </group> <!-- login -->
     </groups>
-    <test name="Test" duration-ms="74265" started-at="2019-05-02T17:23:13Z" finished-at="2019-05-02T17:24:28Z">
+    <test name="Test" duration-ms="68320" started-at="2019-05-04T07:16:35Z" finished-at="2019-05-04T07:17:44Z">
       <class name="script.InvalidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@14acaea5]" name="openApp" is-config="true" duration-ms="8444" started-at="2019-05-02T22:53:47Z" finished-at="2019-05-02T22:53:56Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@14acaea5]" name="openApp" is-config="true" duration-ms="12545" started-at="2019-05-04T12:46:51Z" finished-at="2019-05-04T12:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@14acaea5]" name="testInvalidLogin" duration-ms="17977" started-at="2019-05-02T22:53:56Z" finished-at="2019-05-02T22:54:14Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@14acaea5]" name="testInvalidLogin" duration-ms="17925" started-at="2019-05-04T12:47:04Z" finished-at="2019-05-04T12:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@14acaea5]" name="closeApp" is-config="true" duration-ms="665" started-at="2019-05-02T22:54:14Z" finished-at="2019-05-02T22:54:14Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@14acaea5]" name="closeApp" is-config="true" duration-ms="774" started-at="2019-05-04T12:47:22Z" finished-at="2019-05-04T12:47:22Z">
           <params>
             <param index="0">
               <value>
@@ -51,42 +51,115 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.InvalidLogin_Test -->
       <class name="script.VerifyProductVersion_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.VerifyProductVersion_Test@224edc67]" name="openApp" is-config="true" duration-ms="5706" started-at="2019-05-02T22:54:14Z" finished-at="2019-05-02T22:54:20Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.VerifyProductVersion_Test@224edc67]" name="openApp" is-config="true" duration-ms="5902" started-at="2019-05-04T12:47:22Z" finished-at="2019-05-04T12:47:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@224edc67]" name="testProductVerson" duration-ms="6867" started-at="2019-05-02T22:54:20Z" finished-at="2019-05-02T22:54:27Z">
+        <test-method status="FAIL" signature="testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@224edc67]" name="testProductVerson" duration-ms="8629" started-at="2019-05-04T12:47:28Z" finished-at="2019-05-04T12:47:37Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-BJTURSU', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51552}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 90ca71ddbfbcb29dab8ad372dbf6cfa3
+*** Element info: {Using=xpath, value=//div[contains(text(),'Help')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-BJTURSU', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51552}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 90ca71ddbfbcb29dab8ad372dbf6cfa3
+*** Element info: {Using=xpath, value=//div[contains(text(),'Help')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
+	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:81)
+	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at page.EnterPage.clickHelp(EnterPage.java:31)
+	at script.VerifyProductVersion_Test.testProductVerson(VerifyProductVersion_Test.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductVerson -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.VerifyProductVersion_Test@224edc67]" name="closeApp" is-config="true" duration-ms="679" started-at="2019-05-02T22:54:27Z" finished-at="2019-05-02T22:54:28Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.VerifyProductVersion_Test@224edc67]" name="closeApp" is-config="true" duration-ms="6626" started-at="2019-05-04T12:47:37Z" finished-at="2019-05-04T12:47:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProductVerson status=SUCCESS method=VerifyProductVersion_Test.testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@224edc67] output={null}]]]>
+                <![CDATA[[TestResult name=testProductVerson status=FAILURE method=VerifyProductVersion_Test.testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@224edc67] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testProductVerson is PASSED]]>
+              <![CDATA[testProductVerson is FAILED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.VerifyProductVersion_Test -->
       <class name="script.ValidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@4c70fda8]" name="openApp" is-config="true" duration-ms="21861" started-at="2019-05-02T22:53:13Z" finished-at="2019-05-02T22:53:35Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@4c70fda8]" name="openApp" is-config="true" duration-ms="7590" started-at="2019-05-04T12:46:35Z" finished-at="2019-05-04T12:46:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@4c70fda8]" name="testValidLogin" duration-ms="11171" started-at="2019-05-02T22:53:35Z" finished-at="2019-05-02T22:53:46Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@4c70fda8]" name="testValidLogin" duration-ms="7376" started-at="2019-05-04T12:46:43Z" finished-at="2019-05-04T12:46:50Z">
           <reporter-output>
             <line>
               <![CDATA[Home page is Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@4c70fda8]" name="closeApp" is-config="true" duration-ms="858" started-at="2019-05-02T22:53:46Z" finished-at="2019-05-02T22:53:47Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@4c70fda8]" name="closeApp" is-config="true" duration-ms="903" started-at="2019-05-04T12:46:50Z" finished-at="2019-05-04T12:46:51Z">
           <params>
             <param index="0">
               <value>
