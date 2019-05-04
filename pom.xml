@@ -22,7 +22,7 @@
 			<version>2.22.0</version>
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>D:\Automation_Project_GitHub\Automation_POM\testng.xml</suiteXmlFile>
+					<suiteXmlFile>E:\Automation_Project_GitHub\Automation_POM\testng.xml</suiteXmlFile>
 				</suiteXmlFiles>
 			</configuration>
        </plugin>
