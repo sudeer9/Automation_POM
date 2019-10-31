@@ -3,13 +3,6 @@
 <suite verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="script.VerifyProductVersion_Test">
-        <methods>
-          <include name="testProductVerson"/>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.VerifyProductVersion_Test -->
       <class name="script.ValidLogin_Test">
         <methods>
           <include name="openApp"/>
@@ -23,6 +16,12 @@
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.InvalidLogin_Test -->
+      <class name="script.VerifyProductVersion_Test">
+        <methods>
+          <include name="testProductVerson"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.VerifyProductVersion_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 69.567 s - in TestSuite
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 5, Time elapsed: 64.899 s <<< FAILURE! - in TestSuite
+openApp(script.ValidLogin_Test)  Time elapsed: 61.687 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-1JFO5LO', ip: '192.168.43.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:5245/status] to be available after 20003 ms
+Caused by: java.util.concurrent.TimeoutException
+
+closeApp(script.ValidLogin_Test)  Time elapsed: 0.4 s  <<< FAILURE!
+java.lang.NullPointerException
+
+closeApp(script.VerifyProductVersion_Test)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException
+
+closeApp(script.InvalidLogin_Test)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException
+
