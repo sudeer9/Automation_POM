@@ -14,7 +14,7 @@
       <![CDATA[testProductVerson is FAILED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="98142" started-at="2019-12-22T04:43:00Z" finished-at="2019-12-22T04:44:38Z">
+  <suite name="Suite" duration-ms="103428" started-at="2019-12-31T03:11:14Z" finished-at="2019-12-31T03:12:57Z">
     <groups>
       <group name="smoke">
         <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@59f99ea]" name="testValidLogin" class="script.ValidLogin_Test"/>
@@ -25,17 +25,17 @@
         <method signature="ValidLogin_Test.testValidLogin()[pri:1, instance:script.ValidLogin_Test@59f99ea]" name="testValidLogin" class="script.ValidLogin_Test"/>
       </group> <!-- login -->
     </groups>
-    <test name="Test" duration-ms="98142" started-at="2019-12-22T04:43:00Z" finished-at="2019-12-22T04:44:38Z">
+    <test name="Test" duration-ms="103428" started-at="2019-12-31T03:11:14Z" finished-at="2019-12-31T03:12:57Z">
       <class name="script.InvalidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@6f7fd0e6]" name="openApp" is-config="true" duration-ms="16360" started-at="2019-12-22T10:13:42Z" finished-at="2019-12-22T10:13:59Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@6f7fd0e6]" name="openApp" is-config="true" duration-ms="15592" started-at="2019-12-31T08:42:03Z" finished-at="2019-12-31T08:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@6f7fd0e6]" name="testInvalidLogin" duration-ms="18233" started-at="2019-12-22T10:13:59Z" finished-at="2019-12-22T10:14:17Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@6f7fd0e6]" name="testInvalidLogin" duration-ms="18172" started-at="2019-12-31T08:42:19Z" finished-at="2019-12-31T08:42:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@6f7fd0e6]" name="closeApp" is-config="true" duration-ms="822" started-at="2019-12-22T10:14:17Z" finished-at="2019-12-22T10:14:18Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@6f7fd0e6]" name="closeApp" is-config="true" duration-ms="809" started-at="2019-12-31T08:42:37Z" finished-at="2019-12-31T08:42:38Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.InvalidLogin_Test -->
       <class name="script.VerifyProductVersion_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.VerifyProductVersion_Test@27efef64]" name="openApp" is-config="true" duration-ms="14326" started-at="2019-12-22T10:14:18Z" finished-at="2019-12-22T10:14:32Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.VerifyProductVersion_Test@27efef64]" name="openApp" is-config="true" duration-ms="13480" started-at="2019-12-31T08:42:38Z" finished-at="2019-12-31T08:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@27efef64]" name="testProductVerson" duration-ms="4243" started-at="2019-12-22T10:14:32Z" finished-at="2019-12-22T10:14:36Z">
+        <test-method status="FAIL" signature="testProductVerson()[pri:3, instance:script.VerifyProductVersion_Test@27efef64]" name="testProductVerson" duration-ms="4223" started-at="2019-12-31T08:42:51Z" finished-at="2019-12-31T08:42:56Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <div class="popup_menu_label">...</div> is not clickable at point (1259, 68). Other element would receive the click: <div id="preInsertedTransformedMoireId" class="transformedMoireClass" style="transition: opacity 600ms ease-in-out 0s; opacity: 0;"></div>
@@ -63,8 +63,8 @@
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'DESKTOP-1JFO5LO', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54938}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 935f048ce6cc41b132a8eb0bcd1f1df7]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2a9db9eebc2da32df8cd4c28222043c7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="popup_menu_label">...</div> is not clickable at point (1259, 68). Other element would receive the click: <div id="preInsertedTransformedMoireId" class="transformedMoireClass" style="transition: opacity 600ms ease-in-out 0s; opacity: 0;"></div>
@@ -72,8 +72,8 @@ Session ID: 935f048ce6cc41b132a8eb0bcd1f1df7]]>
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'DESKTOP-1JFO5LO', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54938}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 935f048ce6cc41b132a8eb0bcd1f1df7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\SUDEER\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56443}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2a9db9eebc2da32df8cd4c28222043c7
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -125,7 +125,7 @@ Session ID: 935f048ce6cc41b132a8eb0bcd1f1df7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductVerson -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.VerifyProductVersion_Test@27efef64]" name="closeApp" is-config="true" duration-ms="1961" started-at="2019-12-22T10:14:37Z" finished-at="2019-12-22T10:14:38Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.VerifyProductVersion_Test@27efef64]" name="closeApp" is-config="true" duration-ms="1803" started-at="2019-12-31T08:42:56Z" finished-at="2019-12-31T08:42:57Z">
           <params>
             <param index="0">
               <value>
@@ -141,18 +141,18 @@ Session ID: 935f048ce6cc41b132a8eb0bcd1f1df7
         </test-method> <!-- closeApp -->
       </class> <!-- script.VerifyProductVersion_Test -->
       <class name="script.ValidLogin_Test">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@59f99ea]" name="openApp" is-config="true" duration-ms="24333" started-at="2019-12-22T10:13:00Z" finished-at="2019-12-22T10:13:25Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin_Test@59f99ea]" name="openApp" is-config="true" duration-ms="32149" started-at="2019-12-31T08:41:14Z" finished-at="2019-12-31T08:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@59f99ea]" name="testValidLogin" duration-ms="16364" started-at="2019-12-22T10:13:25Z" finished-at="2019-12-22T10:13:41Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin_Test@59f99ea]" name="testValidLogin" duration-ms="15928" started-at="2019-12-31T08:41:46Z" finished-at="2019-12-31T08:42:02Z">
           <reporter-output>
             <line>
               <![CDATA[Home page is Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@59f99ea]" name="closeApp" is-config="true" duration-ms="1238" started-at="2019-12-22T10:13:41Z" finished-at="2019-12-22T10:13:42Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin_Test@59f99ea]" name="closeApp" is-config="true" duration-ms="1110" started-at="2019-12-31T08:42:02Z" finished-at="2019-12-31T08:42:03Z">
           <params>
             <param index="0">
               <value>
