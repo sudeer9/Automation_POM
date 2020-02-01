@@ -24,6 +24,7 @@ public class VerifyProductVersion_Test extends BaseTest
 			l.clickLogin();
 			Thread.sleep(2000);
 			EnterPage e=new EnterPage(driver);
+			Thread.sleep(2000);
 			e.clickHelp();
 			Thread.sleep(2000);
 			e.clickAboutActiTIME();
