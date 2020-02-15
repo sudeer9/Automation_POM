@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
+      <class name="script.InvalidLogin_Test">
+        <methods>
+          <include name="openApp"/>
+          <include name="testInvalidLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.InvalidLogin_Test -->
       <class name="script.VerifyProductVersion_Test">
         <methods>
           <include name="testProductVerson"/>
@@ -10,6 +17,13 @@
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.VerifyProductVersion_Test -->
+      <class name="script.ValidLogin_Test">
+        <methods>
+          <include name="openApp"/>
+          <include name="testValidLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.ValidLogin_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
