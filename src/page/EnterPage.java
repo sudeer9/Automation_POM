@@ -41,18 +41,8 @@ public class EnterPage
 	}
 	public void verifyHomePageDisplayed(WebDriver driver, String eTitle)
 	{
-	String strETO=AutoUtils.getProperty(IAutoConstants.CONFIG_PATH,"ETO");
-		long ETO=Long.parseLong(strETO);
-		WebDriverWait wait=new WebDriverWait(driver, ETO);
-		try
-		{
-			wait.until(ExpectedConditions.titleIs(eTitle));
-			Reporter.log("Home page is Displayed",true);
-		}
-		catch (Exception e) 
-		{
-			Reporter.log("Home Page Not displayed",true);
-			Assert.fail();
-		}
+		String aTitle = driver.getTitle();
+		Assert.assertEquals(aTitle, eTitle);
+		Reporter.log("Actual tiltle is matching with the Expected tiltle",true);
 	}
 }
