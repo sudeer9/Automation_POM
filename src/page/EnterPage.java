@@ -38,6 +38,7 @@ public class EnterPage
 	{
 		String ActualVersion = version.getText();
 		Assert.assertEquals(ActualVersion, ExpectedVersion);
+		Reporter.log("Actual and Expected versions are same",true);
 	}
 	public void verifyHomePageDisplayed(WebDriver driver, String eTitle)
 	{
