@@ -45,5 +45,7 @@ public class EnterPage
 		String aTitle = driver.getTitle();
 		Assert.assertEquals(aTitle, eTitle);
 		Reporter.log("Actual tiltle is matching with the Expected tiltle",true);
+		Reporter.log("Actual tiltle is matching with the Expected tiltle",true);
+		
 	}
 }
