@@ -21,7 +21,7 @@ public class ValidLogin_Test extends BaseTest
 		l.setPassword(pw);
 		Thread.sleep(2000);
 		l.clickLogin();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		EnterPage e=new EnterPage(driver);
 		e.verifyHomePageDisplayed(driver, eTitle);
 		Thread.sleep(2000);
