@@ -14,12 +14,14 @@ import generic.IAutoConstants;
 
 public class EnterPage 
 {
-	@FindBy(xpath="//div[contains(text(),'Help')]")
+	@FindBy(xpath="//tr[2]//div[4]")
 	private WebElement help;
 	@FindBy(linkText="About your actiTIME")
 	private WebElement aboutAT;
 	@FindBy(xpath="//span[@class='productVersion']")
 	private WebElement version;
+	@FindBy(id="aboutPopupCloseButtonId")
+	private WebElement closePopup;
 	
 	public EnterPage(WebDriver driver)
 	{
@@ -39,13 +41,14 @@ public class EnterPage
 		String ActualVersion = version.getText();
 		Assert.assertEquals(ActualVersion, ExpectedVersion);
 		Reporter.log("Actual and Expected versions are same",true);
+		closePopup.click();
 	}
 	public void verifyHomePageDisplayed(WebDriver driver, String eTitle)
 	{
 		String aTitle = driver.getTitle();
 		Assert.assertEquals(aTitle, eTitle);
 		Reporter.log("Actual tiltle is matching with the Expected tiltle",true);
-		Reporter.log("Actual tiltle is matching with the Expected tiltle",true);
+		
 		
 	}
 }
